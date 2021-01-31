@@ -29,29 +29,27 @@
         for developers to make mistakes in comparison functions. My colleague even wrote a whole article <mark>"The Evil within 
         the Comparison Functions"</mark> with lots of examples and explanations.
         <code>
-            <pre>
-                @Override
-                public boolean equals(Object o) {
-                    ....
-                    CheckpointStatistics that = (CheckpointStatistics) o;
-                    return id == that.id &&
-                    savepoint == that.savepoint &&
-                    triggerTimestamp == that.triggerTimestamp &&
-                    latestAckTimestamp == that.latestAckTimestamp &&
-                    stateSize == that.stateSize &&
-                    duration == that.duration &&
-                    alignmentBuffered == that.alignmentBuffered &&
-                    processedData == processedData &&                // &lt;=
-                    persistedData == that.persistedData &&
-                    numSubtasks == that.numSubtasks &&
-                    numAckSubtasks == that.numAckSubtasks &&
-                    status == that.status &&
-                    Objects.equals(checkpointType, that.checkpointType) &&
-                    Objects.equals(
-                    checkpointStatisticsPerTask, 
-                    that.checkpointStatisticsPerTask);
-                }
-            </pre>
+            @Override
+            public boolean equals(Object o) {
+                ....
+                CheckpointStatistics that = (CheckpointStatistics) o;
+                return id == that.id &&
+                savepoint == that.savepoint &&
+                triggerTimestamp == that.triggerTimestamp &&
+                latestAckTimestamp == that.latestAckTimestamp &&
+                stateSize == that.stateSize &&
+                duration == that.duration &&
+                alignmentBuffered == that.alignmentBuffered &&
+                processedData == processedData &&                // &lt;=
+                persistedData == that.persistedData &&
+                numSubtasks == that.numSubtasks &&
+                numAckSubtasks == that.numAckSubtasks &&
+                status == that.status &&
+                Objects.equals(checkpointType, that.checkpointType) &&
+                Objects.equals(
+                checkpointStatisticsPerTask, 
+                that.checkpointStatisticsPerTask);
+            }
         </code>
     </div>
     
@@ -62,49 +60,45 @@
         place. According to the loop condition, the counter <em>i</em> in the <em>for</em> loop can't be greater than <em>1024 (1 &lt;&lt; 10)</em>. Obviously,
         the execution of the switch branch in question will never happen.
         <code>
-            <pre>
-                public void testSignSHA256CompleteEvenHeight2() {
-                    ....
-                    int height = 10;
-                    ....
-                    for (int i = 0; i &lt; (1 &lt;&lt; height); i++) {
-                        byte[] signature = xmss.sign(new byte[1024]);
-                        switch (i) {
-                            case 0x005b:
-                                assertEquals(signatures[0], Hex.toHexString(signature));
-                                break;
-                            case 0x0822:
-                                assertEquals(signatures[1], Hex.toHexString(signature));
-                                break;
-                            ....
-                        }
+            public void testSignSHA256CompleteEvenHeight2() {
+                ....
+                int height = 10;
+                ....
+                for (int i = 0; i &lt; (1 &lt;&lt; height); i++) {
+                    byte[] signature = xmss.sign(new byte[1024]);
+                    switch (i) {
+                        case 0x005b:
+                            assertEquals(signatures[0], Hex.toHexString(signature));
+                            break;
+                        case 0x0822:
+                            assertEquals(signatures[1], Hex.toHexString(signature));
+                            break;
+                        ....
                     }
                 }
-            </pre>
+            }
         </code>
     </div>
     
     <h2>A time bomb</h2>
     <div>
         <code>
-            <pre>
-                private void processSelection(OptionsTreeNode selectedNode) {
-                    if (selectedNode == null) {
-                    setViewPanel(defaultPanel, selectedNode); // &lt;=
-                    return;
-                    }
-                    ....
+            private void processSelection(OptionsTreeNode selectedNode) {
+                if (selectedNode == null) {
+                setViewPanel(defaultPanel, selectedNode); // &lt;=
+                return;
                 }
-                private void setViewPanel(JComponent component, OptionsTreeNode selectedNode) {
-                    ....
-                    setHelpLocation(component, selectedNode);
-                    ....
-                }
-                private void setHelpLocation(JComponent component, OptionsTreeNode node) {
-                    Options options = node.getOptions();
-                    ....
-                }
-            </pre>
+                ....
+            }
+            private void setViewPanel(JComponent component, OptionsTreeNode selectedNode) {
+                ....
+                setHelpLocation(component, selectedNode);
+                ....
+            }
+            private void setHelpLocation(JComponent component, OptionsTreeNode node) {
+                Options options = node.getOptions();
+                ....
+            }
         </code>
         The above code snippet is certainly messed up. If you follow <code>selectedNode</code> from <code>processSelection()</code>, when <code>selectedNode == null</code>, you will 
         immediately find that with this outcome, <abbr title="NullPointerException">NPE</abbr> inevitably awaits us. This is exactly what the analyzer warns us about. 
