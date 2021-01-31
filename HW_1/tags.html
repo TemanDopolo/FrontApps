@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Article</title>
+</head>
+
+<body>
+    <h1>Top bugs in Java Projects in 2020</h1>
+    <div>
+        In <time datetime="2020">previous year</time> we (the PVS-Studio's Java team) have reviewed errors from couple of open-source projects.
+    </div>
+    <blockquote>
+        Since my programs - of course - are always perfect, I realized that this is something else. 
+        I had to go further and disassemble the operating system.
+    </blockquote>
+    <em>Linus Torvalds</em>
+
+    <h2>Tricky equality</h2>
+    <div>
+        Here's an example of a simple and very disappointing mistake which occurred due to <strong>inattention</strong>:
+        the <code>processedData</code> field is compared to itself. Because of this mistake, comparison of the
+        <code>CheckpointStatistics</code>
+        type objects will sometimes give a false positive result. But the main danger of this typo lies in the fact
+        that <strong>equals is very actively used in collections</strong>, and incorrect implementation of this method
+        can lead to very strange behavior, which will take a huge amount of time to debug. For the record, it is common 
+        for developers to make mistakes in comparison functions. My colleague even wrote a whole article <mark>"The Evil within 
+        the Comparison Functions"</mark> with lots of examples and explanations.
+        <code>
+            <pre>
+                @Override
+                public boolean equals(Object o) {
+                    ....
+                    CheckpointStatistics that = (CheckpointStatistics) o;
+                    return id == that.id &&
+                    savepoint == that.savepoint &&
+                    triggerTimestamp == that.triggerTimestamp &&
+                    latestAckTimestamp == that.latestAckTimestamp &&
+                    stateSize == that.stateSize &&
+                    duration == that.duration &&
+                    alignmentBuffered == that.alignmentBuffered &&
+                    processedData == processedData &&                // &lt;=
+                    persistedData == that.persistedData &&
+                    numSubtasks == that.numSubtasks &&
+                    numAckSubtasks == that.numAckSubtasks &&
+                    status == that.status &&
+                    Objects.equals(checkpointType, that.checkpointType) &&
+                    Objects.equals(
+                    checkpointStatisticsPerTask, 
+                    that.checkpointStatisticsPerTask);
+                }
+            </pre>
+        </code>
+    </div>
+    
+    <h2>Unreachable code</h2>
+    <div>
+        The switch branch for the value <code>i == 0x0822(2082)</code> happens to be unreachable. How on earth did that happen? If you pay 
+        attention to the <code>1 &lt;&lt; height</code> loop condition where height is always equal to 10, then everything immediately falls into 
+        place. According to the loop condition, the counter <em>i</em> in the <em>for</em> loop can't be greater than <em>1024 (1 &lt;&lt; 10)</em>. Obviously,
+        the execution of the switch branch in question will never happen.
+        <code>
+            <pre>
+                public void testSignSHA256CompleteEvenHeight2() {
+                    ....
+                    int height = 10;
+                    ....
+                    for (int i = 0; i &lt; (1 &lt;&lt; height); i++) {
+                        byte[] signature = xmss.sign(new byte[1024]);
+                        switch (i) {
+                            case 0x005b:
+                                assertEquals(signatures[0], Hex.toHexString(signature));
+                                break;
+                            case 0x0822:
+                                assertEquals(signatures[1], Hex.toHexString(signature));
+                                break;
+                            ....
+                        }
+                    }
+                }
+            </pre>
+        </code>
+    </div>
+    
+    <h2>A time bomb</h2>
+    <div>
+        <code>
+            <pre>
+                private void processSelection(OptionsTreeNode selectedNode) {
+                    if (selectedNode == null) {
+                    setViewPanel(defaultPanel, selectedNode); // &lt;=
+                    return;
+                    }
+                    ....
+                }
+                private void setViewPanel(JComponent component, OptionsTreeNode selectedNode) {
+                    ....
+                    setHelpLocation(component, selectedNode);
+                    ....
+                }
+                private void setHelpLocation(JComponent component, OptionsTreeNode node) {
+                    Options options = node.getOptions();
+                    ....
+                }
+            </pre>
+        </code>
+        The above code snippet is certainly messed up. If you follow <code>selectedNode</code> from <code>processSelection()</code>, when <code>selectedNode == null</code>, you will 
+        immediately find that with this outcome, <abbr title="NullPointerException">NPE</abbr> inevitably awaits us. This is exactly what the analyzer warns us about. 
+        But after studying the code a little, the author of the article concluded that the program execution will never meet <abbr title="NullPointerException">NPE</abbr>, 
+        since the <code>processSelection()</code> method is called in only two places, before calling which, selectedNode is  <span style="color: red;">explicitly checked for the null</span>.
+        Despite this, such code is a time bomb, because another developer may notice that the method explicitly handles the case of <code>selectedNode == null</code>, 
+        and decide that this is a valid value, which will then result in the application crash.
+    </div>
+
+</body>
+</html>
