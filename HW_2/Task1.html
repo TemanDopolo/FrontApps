@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="Task1.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Registration form</h1>
+    <form>
+        <fieldset>
+            <legend>Main Info</legend>
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="fname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="nickName">Nickname:</label><br>
+            <input type="text" id="nickName" name="nickName"><br>
+
+            <label for="dateOfBirth">Date of birth</label><br>
+            <input type="date" id="dateOfBirth" name="dateOfBirth"><br>
+
+            <label for="timeOfBirth">Time of birth</label><br>
+            <input type="time" id="timeOfBirth" name="timeOfBirth"><br>
+
+            <label for="cities">Your city</label><br>
+            <select id="cities" name="cities">
+                <option value="dnipro">Dnipro</option>
+                <option value="odessa">Odessa</option>
+                <option value="kiev">Kiev</option>
+                <option value="lviv">Lviv</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Email and password</legend>
+
+            <input type="email" id="firstEmail" name="firstEmail" placeholder="First email"><br>
+            <br>
+            <input type="email" id="secondEmail" name="secondEmail" placeholder="Second email"><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password"><br>
+
+            <label for="confirmedPassword">Confirm password</label><br>
+            <input type="password" id="confirmedPassword" name="confirmedPassword"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Info</legend>
+
+            <label for="phoneNumOne">Phone</label><br>
+            <input type="tel" minlength="12" maxlength="12" id="phoneNumOne" name="phoneNumOne"><br>
+
+            <label for="phoneNumTwo">Extra phone</label><br>
+            <input type="tel" minlength="12" maxlength="12" id="phoneNumTwo" name="phoneNumTwo"><br>
+
+            <label for="skypeLogin">Skype:</label><br>
+            <input type="text" id="skypeLogin" name="skypeLogin"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Level of skills</legend>
+
+            <label for="htmlSkill">HTML</label><br>
+            <input type="range" id="htmlSkill" name="htmlSkill"><br>
+
+            <label for="cssSkill">CSS</label><br>
+            <input type="range" id="cssSkill" name="cssSkill"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>About yourself</legend>
+
+            <textarea id="aboutYourselfArea" name="aboutYourselfArea" rows="4" cols="50"></textarea><br>
+
+            <label for="genderM">Gender</label><br>
+            <input type="radio" id="genderM" name="gender" value="male">Male<br>
+            <input type="radio" id="genderF" name="gender" value="female">Female<br>
+            <input type="radio" id="genderU" name="gender" value="undecided">Undecided<br>
+
+            <label for="favoriteColor">Favorite color</label><br>
+            <input type="color" id="favoriteColor" name="favoriteColor"><br>
+
+            <label for="workFT">Activity</label><br>
+            <input type="radio" id="workFT" name="work" value="fullWork">Full time work<br>
+            <input type="radio" id="workPT" name="work" value="partWork">Part time work<br>
+            <input type="radio" id="workFreelance" name="work" value="freelance">Freelance<br>
+            <input type="radio" id="workFree" name="work" value="free">Totally free as a white person<br>
+            <input type="radio" id="workStud" name="work" value="stud">Student<br>
+
+            <label for="animalD">Pet</label><br>
+            <input type="checkbox" id="animalD" name="animal" value="dog">Dog<br>
+            <input type="checkbox" id="animalC" name="animal" value="cat">Cat<br>
+            <input type="checkbox" id="animalB" name="animal" value="bird">Bird<br>
+            <input type="checkbox" id="animalF" name="animal" value="fish">Fish<br>
+            <input type="checkbox" id="animalA" name="animal" value="another">Another one<br>
+
+            <label for="newFile">Add file</label><br>
+            <input type="file" id="newFile" name="newFile"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Profession direction</legend>
+            <label for="activities">Choose activiry from list:</label><br>
+            <select id="activities" name="activities">
+                <option value="front">Front-end</option>
+                <option value="back">Back-end</option>
+                <option value="devops">Devops</option>
+                <option value="ba">BA</option>
+                <option value="pm">PM</option>
+                <option value="qa">QA</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>
