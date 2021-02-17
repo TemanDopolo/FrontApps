@@ -1,10 +1,108 @@
 body {
-    font-family: 'Mulish', sans-serif
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+
+.trafalgar-logo {
+    font-style: normal;
+    font-size: 24px; 
+    font-weight: bold; 
+    line-height: 1;
+    color: #233348;
+
+    margin-top: 62px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.logo-image {
+    float: left;
+}
+
+.nav-bar-list {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar-list li {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    color: #1F1534;
+
+    float: right;
+    margin: 40px;
+    margin-top: 70px;
 }
 
 li {
     list-style: none;
 }
+
+.nav-bar-list::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.nav-bar-list li:not(:first-child) {
+    opacity: 0.5;
+}
+
 a {
     text-decoration: none;
 }
+
+.section-head {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 2;
+    color: #000000;
+    text-align: center;
+}
+
+.section-paragraph {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2;
+    color: #7D7987;
+    text-align: center;
+}
+
+.list-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 2;           
+    color: #000000;
+}
+
+.list-paragraph {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;  
+    color: #7D7987;
+}
+
+/* .nav-bar-list>li+li+li {
+
+} */
