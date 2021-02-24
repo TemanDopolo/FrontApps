@@ -63,7 +63,12 @@ header {
 }
 
 .virtual-healthcare-section {
+    width: 1247px;
+    height: 598px;
+
     margin-top: 167px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .services-section {
