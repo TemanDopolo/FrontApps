@@ -14,68 +14,132 @@ a {
     text-decoration: none;
 }
 
-header {
+.containerOne {
     margin-left: auto;
     margin-right: auto;
+    width: 1220px;
+}
+
+.containerTwo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1270px;
+}
+
+/* Head */
+
+header {
     padding-top: 56px;
-    width: 1217px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .trafalgar-logo {
     font-style: normal;
     font-size: 24px; 
     font-weight: bold; 
-    line-height: 1;
+    line-height: 1.25;
     color: #233348;
     
-    float: left;
-    padding-top: 62px;
-}
-
-.logo {
-    float: left;
 }
 
 .logo-image {
-    float: left;
-    margin-top: 56px;
     margin-right: 12px;
 }
 
+.nav-bar-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .nav-bar-list li {
+    margin-right: 40px;
+}
+
+.nav-bar-list a {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 1;
+    line-height: 1.28;
     color: #1F1534;
-    
-    float: right;
-    margin-right: 40px;
-    margin-top: 70px;
 }
 
-.nav-bar-list li:not(:last-child) {
+.nav-bar-list li:not(:first-child) {
     opacity: 0.5;
 }
 
-.nav-bar-list li:first-child {
+.nav-bar-list li:last-child {
     margin-right: 0px;
 }
 
-.virtual-healthcare-section {
-    width: 1247px;
-    height: 598px;
 
-    margin-top: 167px;
-    margin-left: auto;
-    margin-right: auto;
+/* First section */
+
+.virtual-healthcare-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 177px;
 }
+
+.virtual-healthcare-section div {
+    margin-right: 110px;
+}
+
+.virtual-healthcare-section div h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.17;
+    color: #000000;
+
+    margin-bottom: 25px;
+}
+
+.virtual-healthcare-section div p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.52;
+    color: #7D7987;
+
+    margin-bottom: 45px;
+}
+
+.virtual-healthcare-section div button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #458FF6;
+    border-radius: 55px;
+    border: 1px solid #458FF6;
+
+    font-family: inherit;
+    min-width: 200px;
+    padding: 20px;
+}
+
+
+/* Second section */
 
 .services-section {
     margin-left: auto;
     margin-right: auto;
     margin-top: 192px;
     width: 1120px;
+
+    margin-bottom: 220px;
 }
 
 .section-head {
@@ -84,7 +148,6 @@ header {
     font-size: 36px;
     line-height: 1.5;
     color: #000000;
-    text-align: center;
 }
 
 .section-head::after {
@@ -99,16 +162,30 @@ header {
     margin-top: 26px;
 }
 
+.centred-section-element {
+    text-align: center;
+}
+
 .section-paragraph {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 1.6;
     color: #7D7987;
+}
+
+.section-paragraph-second {
     text-align: center;
-    
     margin-top: 61px;
     margin-bottom: 80px;
+}
+
+.regular-section-paragraph {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 2;
+    color: #7D7987
 }
 
 .list-header {
@@ -178,12 +255,280 @@ header {
     border: 1px solid #458FF6;
     border-radius: 55px;
 
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 51px;
-    padding-right: 51px;
+    padding: 16px 51px 16px 51px;
 }
 
 .button {
     text-align: center;
 }
+
+
+/* Third section */
+
+.leading-healthcare-providers-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 229px;
+}
+
+.leading-healthcare-providers-section div {
+    margin-left: 142px;
+}
+
+.leading-healthcare-providers-section div p {
+    margin-top: 31px;
+    margin-bottom: 40px;
+}
+
+.section-head-left-dash::after {
+    margin-left: 0px;
+}
+
+
+/* Fourth section */
+
+.download-mobile-apps-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 286px;
+}
+
+.download-mobile-apps-section div {
+    margin-right: 71px;
+}
+
+.download-mobile-apps-section div p {
+    margin-top: 31px;
+    margin-bottom: 40px;
+}
+
+.section-head-left-dash::after {
+    margin-left: 0px;
+}
+
+
+/* Section fifth */
+
+.what-our-customer-saying-section {
+    margin-bottom: 222px;
+}
+
+.main-feedback-content {
+    border-radius: 24px;
+    background: linear-gradient(208.18deg, 
+    #67C3F3 9.05%, #5A98F2 76.74%);
+}
+
+.what-our-customer-saying-section h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.3;
+    color: #FFFFFF;
+
+    text-align: center;
+    margin-bottom: 77px;
+}
+
+.main-feedback-content {
+    padding: 64px 118px 90px;
+}
+
+.feedback-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-content blockquote{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 1.58;
+    color: rgba(255, 255, 255, 0.9);
+    
+}
+
+.customer-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 2.18;
+
+    color: #FFFFFF;
+}
+
+.customer-position {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 2.6;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.customer blockquote {
+    margin-left: 110px;
+}
+
+.customer figcaption {
+    margin-left: 29px;
+}
+
+.customer img {
+    border-radius: 144;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    height: 140px;
+    flex-shrink: 0;
+}
+
+.fill-dash-with-white-color::after {
+   background-color: #FFFFFF;
+}
+
+.buttons-list {
+   display: flex;
+   justify-content: center;
+   margin-top: 43px;
+}
+
+.point {
+    margin-right: 18px;
+}
+
+.before-last-elem {
+    margin-right: 0px;
+}
+
+.buttons-list-element {
+    padding: 0;
+    border: 0;
+    background-color: #FFFFFF;
+}
+
+.arrow-left {
+    margin-right: 92px;
+}
+
+.arrow-right {
+    margin-left: 92px;
+    transform: rotate(180deg);
+}
+
+/* Section Sixth */
+
+.latest-aticles-section ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+    margin-top: 72px;
+}
+
+.latest-aticles-section p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #7D7987;
+}
+
+.latest-aticles-section h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1.52;
+    color: #000000;
+}
+
+.latest-aticles-section li {
+    background-color: #FFFFFF;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    width: 350px;
+    overflow: hidden;
+}
+
+.latest-aticles-section div {
+    padding: 24px 32px 35px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    margin-top: 202px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    padding-top: 118px;
+    padding-bottom: 112px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.logo-white {
+    color: white;
+}
+
+.left-content {
+    width: 392px;
+}
+
+.left-content .logo {
+    margin-bottom: 21px;
+}
+
+.left-content p:first-of-type {
+    margin-bottom: 30px;
+}
+
+footer h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 3;
+}
+
+.navigation li {
+    margin-bottom: 20px;
+}
+
+.navigation li a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 2.1;
+}
+
+
+
+
+
+
+
+

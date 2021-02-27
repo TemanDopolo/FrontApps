@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&di">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="styles.css">
-        <title>Html and basic css styles</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&di">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Html and basic css styles</title>
+</head>
 
 <body>
-    <header>
+    <header class="containerOne">
         <a class="logo" href="/logo">
-            <img class="logo-image" src="imgs/img7.svg" alt="logo">
+            <img class="logo-image" src="imgs/logo.svg" alt="logo">
             <p class="trafalgar-logo">Trafalgar</p>
         </a>
         <nav>
-            <ul class="nav-bar-list clear-fix">
+            <ul class="nav-bar-list">
                 <li class="nav-list-item">
-                    <a href="#">About us</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="#">Testimonials</a>
-                </li>
-                <li class="nav-list-item">
-                    <a href="#">Apps</a>
+                    <a href="#">Home</a>
                 </li>
                 <li class="nav-list-item">
                     <a href="#">Find a doctor</a>
                 </li>
                 <li class="nav-list-item">
-                    <a href="#">Home</a>
+                    <a href="#">Apps</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#">Testimonials</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#">About us</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="virtual-healthcare-section">
-            <h1>
-                Virtual healthcare for you
-            </h1>
-            <p>
-                Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
-            </p>
-            <img src="path" alt="first healthcare image">
-            <a href="/consultToday">Consult today</a>
+        <section class="virtual-healthcare-section containerOne">
+            <div>
+                <h1>
+                    Virtual healthcare for you
+                </h1>
+                <p>
+                    Trafalgar provides progressive, and affordable<br>
+                    healthcare, accessible on mobile and online<br> for
+                    everyone
+                </p>
+                <button class="button">Consult today</button>
+            </div>
+            <img src="imgs/img1Section.png" alt="first healthcare image">
+
         </section>
         <section class="services-section">
-            <h2 class="section-head">
+            <h2 class="section-head centred-section-element">
                 Our services
             </h2>
-            <p class="section-paragraph">
+            <p class="section-paragraph section-paragraph-second">
                 We provide to you the best choiches for you. Adjust it to your health needs and make sure your
                 undergo treatment<br> with our highly qualified doctors you can consult with us which type of service is
                 suitable
@@ -141,148 +146,223 @@
                 <a class="learn-more-button" href="#">Learn more</a>
             </div>
         </section>
-        <section>
-            <h2>
-                Leading healthcare providers
-            </h2>
-            <img src="path" alt="second healthcare image">
-            <p>
-                Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
-                To us, it’s not just work. We take pride in the solutions we deliver
-            </p>
-            <a href="/learnMore">Learn more</a>
+        <!-- Third section -->
+        <section class="leading-healthcare-providers-section containerOne">
+            <img src="imgs/img2Section.png" alt="second healthcare image">
+            <div>
+                <h2 class="section-head section-head-left-dash">
+                    Leading healthcare providers
+                </h2>
+                <p class="section-paragraph">
+                    Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for
+                    everyone.
+                    To us, it’s not just work. We take pride in the solutions we deliver
+                </p>
+                <a class="learn-more-button" href="/learnMore">Learn more</a>
+            </div>
         </section>
-        <section>
-            <h2>Download our mobile apps</h2>
-            <img src="path" alt="third healthcare image">
-            <p>
-                Our dedicated patient engagement app and web portal allow you to access information instantaneously
-                (no tedeous form, long calls, or administrative hassle) and securely.
-            </p>
-            <a href="/download">Download</a>
+        <!-- Fourth section -->
+        <section class="download-mobile-apps-section">
+            <div>
+                <h2 class="section-head section-head-left-dash">Download our mobile apps</h2>
+                <p class="section-paragraph">
+                    “Our dedicated patient engagement app and<br> web portal allow you to access information<br>
+                    instantaneously (no tedeous form, long calls,<br> or administrative hassle) and securely”
+                </p>
+                <a class="learn-more-button" href="/download">Download</a>
+            </div>
+            <img src="imgs/img4Section.png" alt="third healthcare image">
         </section>
-        <section>
-            <h2>What our customer are saying</h2>
-            <a href="/userProfile">
-                <img src="/userProfilePhoto" alt="profilePhoto">
-                <p>Edward Newgate</p>
-                <p>Founder Circle</p>
-                <article>
-                    <h3 hidden>
-                        articleHeader
-                    </h3>
-                    “Our dedicated patient engagement app and web portal allow you to access information
-                    instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
-                </article>
-            </a>
-            <ul>
+        <!-- Section fifth -->
+        <section class="what-our-customer-saying-section containerOne">
+            <div class="main-feedback-content">
+                <div class="customer-feedback">
+                    <h2 class="section-head fill-dash-with-white-color">What our customer are saying</h2>
+                    <div class="feedback-content feedback-flex-container">
+                        <figure class="customer feedback-flex-container">
+                            <img src="imgs/customer2.png" alt="profilePhoto">
+                            <figcaption>
+                                <span class="customer-name">Edward Newgate</span><br>
+                                <span class="customer-position">Founder Circle</span>
+                            </figcaption>
+                        </figure>
+                        <blockquote>
+                            Our dedicated patient engagement app and<br>
+                            web portal allow you to access information<br>
+                            instantaneously (no tedeous form, long calls,<br>
+                            or administrative hassle) and securely
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <ul class="buttons-list">
                 <li>
-                    <button type="button"></button>
+                    <button class="buttons-list-element arrow-left">
+                        <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.6911 7.76265L5.64523 7.76265L10.269 3.13893C10.9067 2.50117 10.9067 1.54454 10.269 0.906783C9.6312 
+                                0.269028 8.67457 0.269028 8.03681 0.906783L0.702626 8.24097C0.0648711 8.87872 0.0648711 9.83536 0.702626 
+                                10.4731L8.03681 17.8073C8.67457 18.445 9.6312 18.445 10.269 17.8073C10.9067 17.1695 10.9067 16.2129 10.269 
+                                15.5752L5.64523 10.9514L26.6911 10.9514C27.4883 10.9514 28.2855 10.3137 28.2855 9.35704C28.2855 8.40041 27.4883 
+                                7.76265 26.6911 7.76265Z" fill="#458FF6" />
+                        </svg>
+                    </button>
                 </li>
                 <li>
-                    <button type="button"></button>
+                    <button class="buttons-list-element point">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5" cy="5" r="5" fill="#5B9BF3" />
+                        </svg>
+                    </button>
                 </li>
                 <li>
-                    <button type="button"></button>
+                    <button class="buttons-list-element point">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle opacity="0.3" cx="5" cy="5" r="5" fill="#5B9BF3" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="buttons-list-element point">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle opacity="0.3" cx="5" cy="5" r="5" fill="#5B9BF3" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="buttons-list-element point before-last-elem">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle opacity="0.3" cx="5" cy="5" r="5" fill="#5B9BF3" />
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="buttons-list-element arrow-right">
+                        <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.6911 7.76265L5.64523 7.76265L10.269 3.13893C10.9067 2.50117 10.9067 1.54454 10.269 0.906783C9.6312 
+                                0.269028 8.67457 0.269028 8.03681 0.906783L0.702626 8.24097C0.0648711 8.87872 0.0648711 9.83536 0.702626 
+                                10.4731L8.03681 17.8073C8.67457 18.445 9.6312 18.445 10.269 17.8073C10.9067 17.1695 10.9067 16.2129 10.269 
+                                15.5752L5.64523 10.9514L26.6911 10.9514C27.4883 10.9514 28.2855 10.3137 28.2855 9.35704C28.2855 8.40041 
+                                27.4883 7.76265 26.6911 7.76265Z" fill="#458FF6" />
+                        </svg>
+                    </button>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Check out our latest article</h2>
+        <!-- Section Sixth -->
+        <section class="latest-aticles-section containerOne">
+            <h2 class="section-head centred-section-element">Check out our latest article</h2>
             <ul>
                 <li>
-                    <img src="/articleFirst" alt="articleFirst">
-                    <h4>Disease detection, check up in the laboratory</h4>
-                    <p>
-                        In this case, the role of the health laboratory is very important to do a disease
-                        detection...
-                    </p>
-                    <a href="/articleFirst">Read more</a>
+                    <img src="imgs/imgLatestArt1.svg" alt="articleFirst">
+                    <div>
+                        <h4>Disease detection, check up in the laboratory</h4>
+                        <p>
+                            In this case, the role of the health laboratory is very important to do a disease
+                            detection...
+                        </p>
+                        <a href="/articleFirst">Read more</a>
+                    </div>
                 </li>
                 <li>
-                    <img src="/articleSecond" alt="articleSecond">
-                    <h4>Herbal medicines that are safe for consumption</h4>
-                    <p>
-                        Herbal medicine is very widely used at this time because of its very good for your health...
-                    </p>
-                    <a href="/articleSecond">Read more</a>
+                    <img src="imgs/imgLatestArt2.svg" alt="articleSecond">
+                    <div>
+                        <h4>Herbal medicines that are safe for consumption</h4>
+                        <p>
+                            Herbal medicine is very widely used at this time because of its very good for your health...
+                        </p>
+                        <a href="/articleSecond">Read more</a>
+                    </div>
                 </li>
                 <li>
-                    <img src="/articleThird" alt="articleThird">
-                    <h4>Natural care for healthy facial skin</h4>
-                    <p>
-                        A healthy lifestyle should start from now and also for your skin health. There are some...
-                    </p>
-                    <a href="/articleThird">Read more</a>
+                    <img src="imgs/imgLatestArt3.svg" alt="articleThird">
+                    <div>
+                        <h4>Natural care for healthy facial skin</h4>
+                        <p>
+                            A healthy lifestyle should start from now and also for your skin health. There are some...
+                        </p>
+                        <a href="/articleThird">Read more</a>
+                    </div>
                 </li>
             </ul>
-            <a href="/viewAll">View all</a>
+            <a class="learn-more-button" href="/viewAll">View all</a>
         </section>
     </main>
     <footer>
-        <a href="/logo">
-            <img src="/logo" alt="logo">
-            <p><strong>Trafalgar</strong></p>
-        </a>
-        <p>
-            Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
-        </p>
-        <p>
-            ©Trafalgar PTY LTD 2020. All rights reserved
-        </p>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#"><strong>Company</strong></a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Testimonials</a>
-                </li>
-                <li>
-                    <a href="#">Find a doctor</a>
-                </li>
-                <li>
-                    <a href="#">Apps</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#"><strong>Region</strong></a>
-                </li>
-                <li>
-                    <a href="#">Indonesia</a>
-                </li>
-                <li>
-                    <a href="#">Singapore</a>
-                </li>
-                <li>
-                    <a href="#">Hongkong</a>
-                </li>
-                <li>
-                    <a href="#">Canada</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#"><strong>Help</strong></a>
-                </li>
-                <li>
-                    <a href="#">Help center</a>
-                </li>
-                <li>
-                    <a href="#">Contact support</a>
-                </li>
-                <li>
-                    <a href="#">Instructions</a>
-                </li>
-                <li>
-                    <a href="#">How it works</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="footer-container containerOne">
+            <div>
+                <section class="left-content">
+                    <a class="logo" href="#">
+                        <img src="imgs/logo-white.svg" alt="logo">
+                        <span class="logo-white">Trafalgar</span>
+                    </a>
+                    <p>
+                        Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for
+                        everyone
+                    </p>
+                    <p>
+                        ©Trafalgar PTY LTD 2020. All rights reserved
+                    </p>
+                </section>
+            </div>
+            <section class="navigation">
+                <h3><a href="#">Company</a></h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#">Find a doctor</a>
+                        </li>
+                        <li>
+                            <a href="#">Apps</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="navigation">
+                <h3><a href="#">Region</a></h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Indonesia</a>
+                        </li>
+                        <li>
+                            <a href="#">Singapore</a>
+                        </li>
+                        <li>
+                            <a href="#">Hongkong</a>
+                        </li>
+                        <li>
+                            <a href="#">Canada</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="navigation">
+                <h3><a href="#">Help</a></h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Help center</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact support</a>
+                        </li>
+                        <li>
+                            <a href="#">Instructions</a>
+                        </li>
+                        <li>
+                            <a href="#">How it works</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
     </footer>
 </body>
+
 </html>
