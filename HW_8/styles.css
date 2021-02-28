@@ -1,8 +1,11 @@
+@import 'reset.css';
+@import 'https://fonts.googleapis.com/css2?family=Mulish:wght@200&di';
+
 body {
     font-family: 'Mulish', sans-serif;
 }
 
-* {
+*>* {
     box-sizing: border-box;
 }
 
@@ -246,20 +249,20 @@ header {
 }
 
 .learn-more-button {
-    font-family: inherit;
     font-size: 18px;
     font-weight: bold;
     line-height: 3.3;
-    color: #458FF6;
     background-color: white;
     border: 1px solid #458FF6;
     border-radius: 55px;
-
-    padding: 16px 51px 16px 51px;
+    margin: auto;
+    width: 200px;
+    margin-top: 69px;
+    text-align: center;
 }
 
-.button {
-    text-align: center;
+.blue-color {
+    color: #458FF6;
 }
 
 
@@ -304,6 +307,10 @@ header {
 
 .section-head-left-dash::after {
     margin-left: 0px;
+}
+
+div.learn-more-button.button-left-align {
+    margin: 0;
 }
 
 
@@ -421,7 +428,6 @@ header {
 .latest-aticles-section ul {
     display: flex;
     justify-content: space-between;
-    gap: 34px;
     margin-top: 72px;
 }
 
@@ -447,22 +453,16 @@ header {
     border-radius: 20px;
     width: 350px;
     overflow: hidden;
+    margin-right: 34px;
 }
 
-.latest-aticles-section div {
+.latest-aticles-section ul:last-child {
+    margin-right: 0;
+}
+
+.latest-aticles-section li>div {
     padding: 24px 32px 35px
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Footer */
@@ -493,6 +493,10 @@ footer p {
 
 .logo-white {
     color: white;
+}
+
+.logo img {
+    margin-right: 12px;
 }
 
 .left-content {
