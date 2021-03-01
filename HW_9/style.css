@@ -1,0 +1,97 @@
+@import 'reset.css';
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: #5C6F4E;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header nav {
+    width: 1440px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.16;
+
+    padding-top: 29px;
+    padding-bottom: 29px;
+    color: #FFFFFF;
+}
+
+.circle {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    margin-right: 10px;
+}
+
+.vector-button {
+    border: 0;
+    padding: 0;
+    background-color: #5C6F4E;
+    position: relative;
+}
+
+.vector-button:hover .nested-list{
+    visibility: visible;
+    opacity: 1;
+}
+
+.nested-list {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+
+    border-top: 10px solid #6F7397;
+    border-bottom: 10px solid #6F7397;
+    width: 265px;
+    right: 0;
+    top: 26px;
+}
+
+.nested-list li {
+    background: #7B89BA;
+    padding-bottom: 32px;
+    text-align: left;
+}
+
+.nested-list li:first-child {
+    padding-top: 27px;
+}
+
+.nested-list li a {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #000000;
+
+    margin-left: 10px;
+} 
+
+.right-header-content {
+    display: flex;
+    align-items: center;
+}
+
