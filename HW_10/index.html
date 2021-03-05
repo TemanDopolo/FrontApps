@@ -6,55 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macket</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <img src="imgs/logo.svg" alt="logo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Blogs</a>
-                </li>
-            </ul>
-            <button>
+        <div class="container">
+            <a href="#">
+                <img src="imgs/logo.svg" alt="logo">
+            </a>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Blogs</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="regular-button orange-border-button">
                 Gift finder
             </button>
-        </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <div>
+        <section class="find-gift-section container">
+            <div class="find-gift-content">
                 <h1>Find a gift for your wife or girlfriend</h1>
-                <p>
+                <p class="regular-paragraph">
                     Struggling to find a gift for your
                     wife or girlfriend? No problem!
                 </p>
-                <button>Find gift now</button>
+                <button class="regular-button">Find gift now</button>
             </div>
-            <img src="imgs/couple.png" alt="couple1">
+            <img class="card-size-container" src="imgs/couple.png" alt="couple1">
         </section>
-        <section>
-            <img src="imgs/thanks.png" alt="thanksCard">
-            <div>
+        <section class="how-we-work-section container">
+            <img class="card-size-container" src="imgs/thanks.png" alt="thanksCard">
+            <di class="how-we-work-content">
                 <h2>How we work</h2>
-                <p>
+                <p class="regular-paragraph">
                     We’ve actually already asked hundreds of women what they want, and made
                     a database with the results. All you have to do is take our short survey
                     that only takes seconds, and our proprietary algorithm will match you with
                     a few perfect gift options.
                 </p>
-                <a href="#">Learn More</a>
+                <a class="regular-button orange-border-button" href="#">Learn More</a>
             </div>
         </section>
         <section>

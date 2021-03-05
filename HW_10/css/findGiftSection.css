@@ -1,0 +1,30 @@
+.find-gift-section {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 68px;
+    padding-bottom: 70px;
+}
+
+.find-gift-content {
+    width: 434px;
+}
+
+.find-gift-content h1 {
+    font-family: Gilroy;
+    font-size: 56px;
+    line-height: 1.23;
+    color: #000000;
+
+    margin-bottom: 36px;
+}
+
+.find-gift-content p {
+    margin-bottom: 52px;
+}
+
+.find-gift-content button {
+    background: #F7941E;
+    color: #FFFFFF;
+}
+

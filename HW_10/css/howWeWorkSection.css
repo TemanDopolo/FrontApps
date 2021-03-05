@@ -1,0 +1,21 @@
+.how-we-work-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-we-work-content {
+    width: 434px;
+}
+
+.how-we-work-content h2 {
+    font-size: 32px;
+    font-family: Gilroy;
+    line-height: 140.62%;
+    color: #000000;
+    
+    margin-bottom: 24px;
+}
+
+.how-we-work-content p {
+    margin-bottom: 36px;
+}
