@@ -1,6 +1,8 @@
 .how-we-work-section {
     display: flex;
     justify-content: space-between;
+
+    padding-bottom: 128px;
 }
 
 .how-we-work-content {

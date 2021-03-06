@@ -1,0 +1,9 @@
+.get-started-section {
+    background-color: orange;
+
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 81px;
+    padding-left: auto;
+    padding-right: auto; */
+}

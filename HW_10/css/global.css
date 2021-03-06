@@ -12,10 +12,21 @@ a {
     text-decoration: none;
 }
 
+.background-container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container {
     width: 1172px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+}
+
+.left-right-space-container {
+    padding-left: 134px;
+    padding-right: 134px;
 }
 
 .regular-button {
