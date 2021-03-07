@@ -5,11 +5,29 @@
 }
 
 .best-blogs-ever-header {
+    font-family: Gilroy;
+    font-size: 32px;
+    line-height: 1.18;
+    color: #000000;
+
     margin-bottom: 23px;
 }
 
 .best-blogs-ever-paragraph {
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 135.94%;
+    color: #000000;
+
     margin-bottom: 71px;
+}
+
+.best-blogs-ever-paragraph::before {
+    content:'“';
+}
+
+.best-blogs-ever-paragraph::after {
+    content:'”';
 }
 
 .black-card-with-img {
@@ -29,40 +47,70 @@
 }
 
 .black-card-quote{
-    margin-bottom: 27px;    
+    font-family: Gilroy;
+    font-size: 48px;
+    line-height: 1.21;
+
+    display: block;
+    margin-bottom: 60px;    
+}
+
+.black-card-name {
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 140.62%;
+
+    display: block;
+    margin-bottom: 27px;
 }
 
 .black-card-link {
-    margin-top: 27px;
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 140.62%;
 }
 
 .bottom-content {
     display: flex;
 }
 
-.left-bottom-content {
+.bottom-content-header-and-paragraph {
     width: 570px;
     padding: 48px;
-    margin-right: 30px;
 }
 
-.left-bottom-content:hover {
+.bottom-content-header-and-paragraph:hover {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
     background-color: white;
+}
+
+.left-bottom-content {
+    margin-right: 30px;
 }
 
 .bottom-content-margin-container {
     margin-bottom: 16px;
 }
 
-.right-bottom-content {
-    width: 570px;
-    padding: 48px;
+.bottom-content-header-and-paragraph h3 {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 140.62%;   
+    color: #000000;
 }
 
-.right-bottom-content:hover {
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
-    background-color: white;
+.bottom-content-header-and-paragraph p {
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 140.62%;
+    color: #000000;
 }
 
+.bottom-content-header-and-paragraph a {
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 140.62%;
+    color: #000000;
+}
 
