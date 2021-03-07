@@ -1,9 +1,46 @@
 .get-started-section {
-    background-color: orange;
-
     display: flex;
     justify-content: space-between;
-    /* padding-top: 81px;
-    padding-left: auto;
-    padding-right: auto; */
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.background-color-container {
+    background: #F7941E;
+}
+
+.get-started-links {
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+
+.get-started-left-content-part {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.get-started-left-content {
+    font-family: Gilroy;
+    font-size: 32px;
+    line-height: 140.62%;
+    color: #000000;
+}
+
+.bold-font-container {
+    font-weight: bold;
+}
+
+.override-button-left-link-container {
+    color: white;
+    background-color: #000000;
+    margin-right: 16px;
+}
+
+.override-button-right-link-container {
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+
+

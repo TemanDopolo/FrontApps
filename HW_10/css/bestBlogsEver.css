@@ -1,0 +1,68 @@
+.best-blogs-ever {
+    background-color: #FFFF;
+    padding-top: 88px;
+    padding-bottom: 80px;
+}
+
+.best-blogs-ever-header {
+    margin-bottom: 23px;
+}
+
+.best-blogs-ever-paragraph {
+    margin-bottom: 71px;
+}
+
+.black-card-with-img {
+    display: flex;
+    background-color: black;
+
+    margin-bottom: 40px;
+}
+
+.black-card-white-text-container {
+    color: #FFFF;
+}
+
+.black-card-with-img figcaption {
+    margin-top: 63px;
+    margin-left: 100px;
+}
+
+.black-card-quote{
+    margin-bottom: 27px;    
+}
+
+.black-card-link {
+    margin-top: 27px;
+}
+
+.bottom-content {
+    display: flex;
+}
+
+.left-bottom-content {
+    width: 570px;
+    padding: 48px;
+    margin-right: 30px;
+}
+
+.left-bottom-content:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.bottom-content-margin-container {
+    margin-bottom: 16px;
+}
+
+.right-bottom-content {
+    width: 570px;
+    padding: 48px;
+}
+
+.right-bottom-content:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+

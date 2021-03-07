@@ -24,6 +24,10 @@ a {
     margin-right: auto; 
 }
 
+.center-text-container {
+    text-align: center;
+}
+
 .left-right-space-container {
     padding-left: 134px;
     padding-right: 134px;
