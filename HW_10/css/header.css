@@ -1,0 +1,35 @@
+header {
+    /* display: flex; */
+    background-color: #FAFAFA;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin-right: 30px;
+}
+
+.nav-bar ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-bar ul li a {
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #000000;
+}
+
+
+
+

@@ -1,0 +1,66 @@
+html, body {
+    font-family: 'Gilroy', sans-serif;
+    background-color: #F1F1F2;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background-container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 1172px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.center-text-container {
+    text-align: center;
+}
+
+.left-right-space-container {
+    padding-left: 134px;
+    padding-right: 134px;
+}
+
+.regular-button {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: #F7941E;
+    border-radius: 5px;
+    
+    border: none;
+    background-color: transparent;
+    padding: 10px 24px;
+}
+
+.orange-border-button {
+    border: 1px solid #F7941E;
+}
+
+.card-size-container {
+    width: 570px;
+    height: 555px;
+}
+
+.regular-paragraph {
+    font-family: Gilroy;
+    font-size: 20px;
+    line-height: 140.62%;
+    color: #000000;
+}
+
+
+

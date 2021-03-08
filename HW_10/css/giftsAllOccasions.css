@@ -1,0 +1,81 @@
+.gifts-all-occasions {
+    background-color: #FAFAFA;
+    padding-top: 96px;
+    padding-bottom: 136px;
+}
+
+.gifts-all-occasions-header {
+    font-family: Gilroy;
+    font-size: 32px;
+    line-height: 1.18;
+
+    color: #000000;
+}
+
+.gifts-all-occasions-paragraph {
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #000000;
+
+    margin-top: 23px;
+    margin-bottom: 64px;
+}
+
+.gifts-all-occasions-paragraph::before {
+    content:'“';
+}
+
+.gifts-all-occasions-paragraph::after {
+    content:'”';
+}
+
+.card-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.35;
+    color: #000000;
+}
+
+.card-link::after {
+    content: '>';
+}
+
+.card-header {
+    font-family: Gilroy;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000000;
+
+    margin-bottom: 74px;
+}
+
+.card-content {
+    padding-top: 24px;
+}
+
+.gifts-all-occasions ul {
+    display: flex;
+}
+
+.gifts-all-occasions ul li {
+    width: 270px;
+    margin-right: 30px;
+
+    transition: filter 0.3s;
+}
+
+.gifts-all-occasions ul li:hover {
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
+
+.gifts-all-occasions ul li:hover figcaption {
+    background-color: white;
+}
+
+.gifts-all-occasions ul li:last-child {
+    margin-right: 0px;
+}
+

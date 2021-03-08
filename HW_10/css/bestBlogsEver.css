@@ -1,0 +1,116 @@
+.best-blogs-ever {
+    background-color: #FFFF;
+    padding-top: 88px;
+    padding-bottom: 80px;
+}
+
+.best-blogs-ever-header {
+    font-family: Gilroy;
+    font-size: 32px;
+    line-height: 1.18;
+    color: #000000;
+
+    margin-bottom: 23px;
+}
+
+.best-blogs-ever-paragraph {
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #000000;
+
+    margin-bottom: 71px;
+}
+
+.best-blogs-ever-paragraph::before {
+    content:'“';
+}
+
+.best-blogs-ever-paragraph::after {
+    content:'”';
+}
+
+.black-card-with-img {
+    display: flex;
+    background-color: black;
+
+    margin-bottom: 40px;
+}
+
+.black-card-white-text-container {
+    color: #FFFF;
+}
+
+.black-card-with-img figcaption {
+    margin-top: 63px;
+    margin-left: 100px;
+}
+
+.black-card-quote{
+    font-family: Gilroy;
+    font-size: 48px;
+    line-height: 1.21;
+
+    display: block;
+    margin-bottom: 60px;    
+}
+
+.black-card-name {
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 1.79;
+
+    display: block;
+    margin-bottom: 27px;
+}
+
+.black-card-link {
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 1.38;
+}
+
+.bottom-content {
+    display: flex;
+}
+
+.bottom-content-header-and-paragraph {
+    width: 570px;
+    padding: 48px;
+}
+
+.bottom-content-header-and-paragraph:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.left-bottom-content {
+    margin-right: 30px;
+}
+
+.bottom-content-margin-container {
+    margin-bottom: 16px;
+}
+
+.bottom-content-header-and-paragraph h3 {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.42;   
+    color: #000000;
+}
+
+.bottom-content-header-and-paragraph p {
+    font-family: Gilroy;
+    font-size: 18px;
+    line-height: 1.38;
+    color: #000000;
+}
+
+.bottom-content-header-and-paragraph a {
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 0.83;
+    color: #000000;
+}
+
