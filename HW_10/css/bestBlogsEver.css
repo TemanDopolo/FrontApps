@@ -16,7 +16,7 @@
 .best-blogs-ever-paragraph {
     font-family: Gilroy;
     font-size: 18px;
-    line-height: 135.94%;
+    line-height: 1.33;
     color: #000000;
 
     margin-bottom: 71px;
@@ -58,7 +58,7 @@
 .black-card-name {
     font-family: Gilroy;
     font-size: 14px;
-    line-height: 140.62%;
+    line-height: 1.79;
 
     display: block;
     margin-bottom: 27px;
@@ -67,7 +67,7 @@
 .black-card-link {
     font-family: Gilroy;
     font-size: 18px;
-    line-height: 140.62%;
+    line-height: 1.38;
 }
 
 .bottom-content {
@@ -96,21 +96,21 @@
     font-family: Gilroy;
     font-size: 24px;
     font-weight: bold;
-    line-height: 140.62%;   
+    line-height: 1.42;   
     color: #000000;
 }
 
 .bottom-content-header-and-paragraph p {
     font-family: Gilroy;
     font-size: 18px;
-    line-height: 140.62%;
+    line-height: 1.38;
     color: #000000;
 }
 
 .bottom-content-header-and-paragraph a {
     font-family: Gilroy;
     font-size: 14px;
-    line-height: 140.62%;
+    line-height: 0.83;
     color: #000000;
 }
 

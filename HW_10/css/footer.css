@@ -8,6 +8,13 @@ footer {
     justify-content: center;
 }
 
+.footer-nav-bar ul a {
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #000000;
+}
+
 .footer-nav-bar::after {
     content: '';
     display: block;
@@ -47,8 +54,16 @@ footer {
     margin-right: 26px;
 }
 
+
 .social-medias li:last-child {
     margin-right: 0;
+}
+
+.footer-privacy-terms p {
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #000000;
 }
 
 .footer-privacy-terms {
