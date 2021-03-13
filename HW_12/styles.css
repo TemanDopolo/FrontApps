@@ -1,0 +1,110 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet';
+@import 'reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+/* Flex approach */
+.name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.16;
+    color: #000000;
+}
+
+.position {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.16;
+    color: #000000;
+
+    margin-top: 9px;
+}
+
+.rightContent {
+    margin-top: 57px;
+}
+
+.profile-card-v1 {
+    display: flex;
+}
+
+.img {
+    margin-top: 35px;
+    margin-right: 18px;
+}
+
+/* Float approach */
+.profile-card-v2 figcaption {
+    float: left;
+}
+
+.profile-card-v2 figcaption::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.profile-card-v2 img {
+    float: left;
+}
+
+.profile-card-v2 img::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* Inline-block approach */
+.profile-card-v3 figcaption {
+    display: inline-block;
+}
+
+.profile-card-v3 img {
+    display: inline-block;
+}
+
+.profile-card-v3 img {
+    vertical-align: middle;
+}
+
+.profile-card-v3 figcaption {
+    vertical-align: middle;
+}
+
+/* Table approach */
+.profile-card-v4 {
+    display: table;
+}
+
+.profile-card-v4 figcaption {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.profile-card-v4 img {
+    display: table-cell;
+}
+
+
+/* Table html approach */
+.john-doe {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.16;
+    color: #000000;
+
+    vertical-align: middle;
+    padding-left: 18px;
+}
+
+.whole-table {
+    margin-top: 35px;
+}
