@@ -4,6 +4,12 @@
     padding-bottom: 136px;
 }
 
+.container {
+    width: 1172px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 .gifts-all-occasions-header {
     font-family: Gilroy;
     font-size: 32px;
@@ -54,10 +60,6 @@
 
 .card-content {
     padding-top: 24px;
-}
-
-.gifts-all-occasions ul {
-    
 }
 
 .gifts-all-occasions ul li {

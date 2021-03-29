@@ -9,3 +9,7 @@ a {
 li {
     list-style: none;
 }
+
+.center-text-container {
+    text-align: center;
+}
