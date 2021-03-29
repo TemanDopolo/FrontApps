@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.center-text-container {
+    text-align: center;
+}
